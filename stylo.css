@@ -1,0 +1,124 @@
+/* Type and text */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: inherit;
+  font: 1.2em / 1.5 system-ui;
+  margin: 0 auto;
+}
+
+h1 {
+  /* Solution: Responsive heading sizing, equal to vw value plus em value */
+  font-size: calc(2vw + 1em);
+}
+
+/* Solution: Add book emoji as generated content, with 20px spacing between
+it and the heading content */
+h1::before {
+  content: "📖";
+  margin-right: 20px;
+}
+
+h2 {
+  /* Solution: Responsive heading sizing, equal to vw value plus em value */
+  font-size: calc(1.5vw + 0.75em);
+}
+
+a {
+  color: red;
+}
+
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+
+.pane {
+  height: 100%;
+  /* Solution: Set container width percentage and min
+  and max width with one declaration, using the clamp()
+  function  */
+  width: clamp(480px, 60%, 1000px);
+  /* Solution: Center container using auto margins */
+  margin: 0 auto;
+  /* Solution: Set container top/bottom padding of 0 on both sides
+  and left/right padding of 20px on both sides */
+  padding: 0 20px;
+  /* Solution: Apply linear gradient from top to bottom */
+  background: linear-gradient(to bottom, #9fb4c7, #7f7caf);
+}
+
+h1,
+.controls {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Solution: Set the h1 and controls div to each be 100px high */
+  height: 100px;
+}
+
+.content {
+  /* Solution: Set background color and image on the content div,
+  and size the image */
+  background: url("https://mdn.github.io/shared-assets/images/examples/big-star.png")
+    no-repeat top 5px right 15px / 40px #eeeeff;
+  /* Solution: Set content top/bottom padding of 0 on both sides and
+  left/right padding of 20px on both sides */
+  padding: 0 20px;
+  /* Solution: Set the content div to be 100% high minus the h1 and
+  controls div combined height (200px) */
+  height: calc(100% - 200px);
+  /* Solution: Set border on the content div */
+  border: 2px solid #28587b;
+  /* Solution: Stop the content from overflowing its container;
+  make it scroll instead */
+  overflow: auto;
+}
+
+img {
+  /* Solution: Set 90% maximum width on the images */
+  max-width: 90%;
+  /* Solution: Center using auto margins */
+  margin: 0 auto;
+  display: block;
+  /* Solution: Set border on the images */
+  border: 1px solid #28587b;
+}
+
+.controls {
+  justify-content: space-around;
+  gap: 20px;
+  padding: 20px;
+}
+
+button {
+  flex: 1;
+  /* Solution: Set button height to 100% and font size to 1.2em */
+  height: 100%;
+  font-size: 1.2em;
+  /* Solution: Set white text color on the buttons */
+  color: white;
+  /* Solution: Set background color on the buttons */
+  background-color: rgb(40 88 123 / 0.8);
+}
+
+/* Solution: Set fully-opaque background color on the
+buttons on hover and focus */
+button:hover,
+button:focus {
+  background-color: rgb(40 88 123 / 1);
+}
+
+/* Solution: Set border radius on content div and buttons */
+.content,
+button {
+  border-radius: 10px;
+}
