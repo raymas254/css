@@ -1,0 +1,19 @@
+header {
+    text-align: center;
+}
+
+h1 {
+    font-family: Jazzier , cursive ;
+    color: #4676A9;
+    text-align: center;
+}
+  
+h2 {
+    color: #4676A9;
+    text-align: end;
+}
+
+footer {
+    background-color: #4676A9;
+    color:  #ffffff ;
+}
