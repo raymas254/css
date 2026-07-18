@@ -30,18 +30,19 @@
     .nav-links {
         display: flex;
         list-style: none;
+        color: wheat;
         
     }
 
     .nav-links a {
         text-decoration: none;
-        color:white;
+        color:purple;
         font-size: 16px;
         margin: 0 15px;
     }
 
     .nav-links a:hover {
-        color: yellowgreen;
+        color: blue;
     }
 
     
@@ -60,12 +61,13 @@
 
     }
 
-    .features {
+    .features-cards {
         display: flex;
         justify-content: space-around;
         padding: 50px;
+        gap: 20px;
     }
-    .card {
+    .features-card {
         background-color: azure;
         padding: 20px;
         border-radius: 5px;
@@ -73,21 +75,110 @@
     }
 
     .icon {
-        width: 50px;
-        height: 50px;
-        border-radius: 5px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        padding:10px;
+                 
+            
     }
+
+    
 
     h2 {
         color: yellowgreen;
         margin-bottom: 10px;
     }
 
+    h1 {
+        color: blueviolet;
+        margin-bottom: 10px;
+        padding:10px
+    }
+
     p {
         color: gray;
         line-height: 1.5;
+        padding: 25px;
+
+    
     }
+
+    .hero{
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        padding: 50px;
+    }
+    .buttons {
+        display: flex;
+        gap: 1rem;
+        padding: 25px;
+
+    
+    }
+    .btn {
+        text-decoration: none;
+        background: skyblue;
+        color: white;
+        padding: 10px;
+        border-radius: 5px;
+
+        }
+    
+    .testimonials {
+        background-color: lightgray;
+        padding: 50px;
+        text-align : center;
+    }
+
+    .testimonial-card {
+        background-color: white;
+        padding: 20px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+    }
+
+    .testimonial-comments{
+        display: flex;
+        justify-content: space-around;
+        gap: 20px;
+
+    }
+    
+    h3 {
+        color: rgb(61, 63, 143);
+        margin-bottom: 10px;
+    }
+
+    h4 {
+        color: rgb(18, 12, 24);
+        margin-bottom: 10px;
+    }
+
+    footer {
+        background-color: bisque;
+        color: coral;
+        padding: 50px;
+    }
+
+    .footer-info {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+    }
+    
+    .footer-socials{
+        color: blueviolet;
+        gap: inherit;
+
+    }
+
+    .footer-socials a:hover {
+        color: blue;
+
+
+    }
+
+
+       
+    
+    
 
