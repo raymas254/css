@@ -3,14 +3,26 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>FocusFlow Navbar</title>
+<title>FocusFlow </title>
 <link rel="stylesheet" href="task.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
 
 <body>
+    <header>
 <!-- Navbar -->
 <nav>
+    <!--humburger icon-->
     <div class="logo">FocusFlow</div>
+      <label for="menu-toggle" class="menu-open" aria-label="Open navigation">
+            <i class="fas fa-bars"></i>
+        </label>
+
+        <!-- Close Icon -->
+        <label for="menu-toggle" class="menu-close" aria-label="Close navigation">
+            <i class="fas fa-times"></i>
+        </label>
+
 
     <ul class="nav-links">
         <li><a href="#">Features</a></li>
@@ -20,19 +32,26 @@
 
     <a href="#" class="btn">Get Started</a>
     </nav>
+    </header>
+
+    <Main>
 <!-- Hero Section -->
 <section class="hero-content">
+    <div class="side-one">
+        <div class="body">
         <h1>Boost Your Productivity with FocusFlow</h1>
         <p>FocusFlow is a powerful productivity tool that helps you manage your tasks, track your time, and achieve your goals efficiently.</p>
-        <section class="buttons">
-            <button class="btn">Get Started</button>
-            <button class="btn">Learn More</button>
-        </section>
-    </section>
- </section>
- <section class="illustration">
-   Illustration placeholder. 
-
+        </div>
+        <div class="buttons">
+            <button class="primary">Get Started</button>
+            <button class="secondary">Learn More</button>
+        </div>
+    </div>
+<div class="side-two">
+ <div class="img">
+   <img src="/Images/productivity.jpg" alt="Illustration">
+</div>
+</div>
  </section>
 
 <!-- Features Section -->
@@ -79,8 +98,10 @@
     </div>
 
  </section>
+ </Main>
+ 
  <!-- Footer Section -->
- <section>
+ 
     <footer>
         <div class="footer-info">
             <div class="footer-logo">
@@ -100,7 +121,7 @@
         </div>
         <p>@FocusFlow</p>
     </footer>
- </section>
+ 
 
  
 </p>
